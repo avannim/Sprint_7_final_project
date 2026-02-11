@@ -1,9 +1,9 @@
+package tests;
+
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;
 
-import static io.restassured.RestAssured.given;
-
-public class LoginCourierTest {
+public class TakeOrderTest {
 
     @BeforeEach
     public void setUp() {
