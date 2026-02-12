@@ -47,7 +47,7 @@ public class CreateCourierTest {
         Response response2 = serviceSteps.sendPostRequest("/api/v1/courier", body);
         serviceSteps.checkRequestStatus(response2, 409);
         ErrorResponse createResponse = gson.fromJson(response2.body().asString(), ErrorResponse.class);
-        assertEquals("Этот логин уже используется.", createResponse.getMessage(), String.format("Сервер вернул не корректное сообщение об ошибке: \"%s\"", createResponse.getMessage()));
+        assertEquals("Этот логин уже используется", createResponse.getMessage(), String.format("Сервер вернул не корректное сообщение об ошибке: \"%s\"", createResponse.getMessage()));
     }
 
     @AfterEach
