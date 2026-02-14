@@ -1,14 +1,14 @@
 package dto.response;
 
-public class CreateCourierResponse {
+public class OkResponse {
 
     boolean ok;
 
-    public CreateCourierResponse(boolean ok) {
+    public OkResponse(boolean ok) {
         this.ok = ok;
     }
 
-    public CreateCourierResponse() {
+    public OkResponse() {
     }
 
     public boolean isOk() {
